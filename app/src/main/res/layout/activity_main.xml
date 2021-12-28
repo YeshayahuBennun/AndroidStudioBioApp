@@ -23,7 +23,33 @@
         android:text="@string/name"
         style="@style/nameStyle" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        style="@style/generalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hobby_hint_text"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/generalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/done_text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/generalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
     <ScrollView
+        style="@style/nameStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="SpeakableTextPresentCheck">

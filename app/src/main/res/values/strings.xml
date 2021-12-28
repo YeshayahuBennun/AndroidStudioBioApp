@@ -8,4 +8,6 @@ I am looking for a company who is willing to offer me a job among their staff. I
         Courteous and enthusiastic, I am interested in IT and everything towards its orbit. I recently began to be fascinated by web programming, e.g. developing apps and building websites.
 I am looking for a company who is willing to offer me a job among their staff. In return, I will offer my full commitment, and be a pleasant and a friendly addition to the team.
 </string>
+    <string name="hobby_hint_text">Enter your hobbies</string>
+    <string name="done_text">Done</string>
 </resources>
