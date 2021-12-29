@@ -9,10 +9,11 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:contentDescription="@string/image_descripton"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
@@ -24,29 +25,32 @@
         style="@style/nameStyle" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/enter_hobbies"
         style="@style/generalStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/hobby_hint_text"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/done_button"
         style="@style/generalStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:onClick="addHobbies"
         android:text="@string/done_text" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/hobbies_text"
         style="@style/generalStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
     <ScrollView
         style="@style/nameStyle"
@@ -58,6 +62,7 @@
             android:id="@+id/textView"
             style="@style/generalStyle"
             android:fontFamily="@font/roboto_slab"
-            android:text="@string/my_bio" />
+            android:text="@string/my_bio"
+            tools:ignore="TextContrastCheck" />
     </ScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>
