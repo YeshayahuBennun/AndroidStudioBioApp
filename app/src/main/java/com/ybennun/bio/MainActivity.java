@@ -9,21 +9,26 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 
+import com.ybennun.bio.data.Bio;
 import com.ybennun.bio.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private final Bio bio = new Bio();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        bio.setName("Yeshayahu Bennun");
+        binding.setBio(bio);
         binding.doneButton.setOnClickListener(this::addHobbies);
     }
 
     public void addHobbies(View view) {
-        binding.hobbiesText.setText(String.format("Hobbies: %s", binding.enterHobbies.getText().toString().trim()));
+
+bio.setHobbies(String.format("Hobbies: %s", binding.enterHobbies.getText().toString().trim()));
         binding.invalidateAll();
         binding.hobbiesText.setVisibility(View.VISIBLE);
 
